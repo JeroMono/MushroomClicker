@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvtnvlqwpxcr2"]
+
+[ext_resource type="Script" uid="uid://ixwb50r57a58" path="res://game_over.gd" id="1_40baj"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_40baj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 141.0
+offset_right = 688.0
+offset_bottom = 254.0
+text = "PUNTUACION:"
+
+[node name="ButtonMenu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 362.0
+offset_right = 498.0
+offset_bottom = 451.0
+
+[node name="Label" type="Label" parent="ButtonMenu"]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 25.0
+offset_right = 287.0
+offset_bottom = 99.0
+text = "MENU"
+
+[node name="ButtonPlay" type="Button" parent="."]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 358.0
+offset_right = 863.0
+offset_bottom = 442.0
+
+[node name="Label" type="Label" parent="ButtonPlay"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 28.0
+offset_right = 181.0
+offset_bottom = 51.0
+text = "VOLVER A JUGAR"
+
+[connection signal="pressed" from="ButtonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="ButtonPlay" to="." method="_on_button_play_pressed"]
