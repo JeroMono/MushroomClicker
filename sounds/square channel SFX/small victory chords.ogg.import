@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dpwjgisgd8ken"
+path="res://.godot/imported/small victory chords.ogg-91e0dfdc1245a8663b926d8dcd362d8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/small victory chords.ogg"
+dest_files=["res://.godot/imported/small victory chords.ogg-91e0dfdc1245a8663b926d8dcd362d8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

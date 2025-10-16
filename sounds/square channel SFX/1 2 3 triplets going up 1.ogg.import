@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdlc1506x7fpj"
+path="res://.godot/imported/1 2 3 triplets going up 1.ogg-acb63554d8072a6c0340f8ffbc9de551.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/1 2 3 triplets going up 1.ogg"
+dest_files=["res://.godot/imported/1 2 3 triplets going up 1.ogg-acb63554d8072a6c0340f8ffbc9de551.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

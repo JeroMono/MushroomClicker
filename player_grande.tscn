@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4p41cxv473lc"]
+
+[ext_resource type="Script" uid="uid://ci4h3je520fox" path="res://character_grande.gd" id="1_1ppyn"]
+[ext_resource type="SpriteFrames" uid="uid://bp0mt7msjm41k" path="res://player_blue.tres" id="2_m5of3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(128, 137)
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_m5of3"]
+
+[node name="player" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_1ppyn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+texture_filter = 3
+position = Vector2(1, -35)
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("2_m5of3")
+animation = &"hit"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 26)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPolyphonic_m5of3")
+max_polyphony = 16
+playback_type = 1
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

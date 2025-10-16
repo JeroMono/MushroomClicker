@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bglbuhljmxui3"
+path="res://.godot/imported/small victory slide up short.ogg-25af187c9fc7efb042a0bb74bdff208c.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/small victory slide up short.ogg"
+dest_files=["res://.godot/imported/small victory slide up short.ogg-25af187c9fc7efb042a0bb74bdff208c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

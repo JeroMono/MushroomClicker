@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdtpijxol81c8"
+path="res://.godot/imported/RPGSFX - 72 run away 2.ogg-8509e5dba2d091edfdb95507c0190992.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 72 run away 2.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 72 run away 2.ogg-8509e5dba2d091edfdb95507c0190992.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

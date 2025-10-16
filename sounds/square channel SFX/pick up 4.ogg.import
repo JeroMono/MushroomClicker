@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cegda8d0m2ehh"
+path="res://.godot/imported/pick up 4.ogg-cf1750279bb3a924b06cc125c1f71368.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/pick up 4.ogg"
+dest_files=["res://.godot/imported/pick up 4.ogg-cf1750279bb3a924b06cc125c1f71368.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

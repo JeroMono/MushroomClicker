@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://n542qqqgg8s4"
+path="res://.godot/imported/glissando going down.ogg-9e0ba47060499837fcb4a741911ff0ce.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/glissando going down.ogg"
+dest_files=["res://.godot/imported/glissando going down.ogg-9e0ba47060499837fcb4a741911ff0ce.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

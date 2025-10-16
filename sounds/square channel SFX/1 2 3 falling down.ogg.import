@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://2egk7e8iyoj7"
+path="res://.godot/imported/1 2 3 falling down.ogg-03d43f2caf0548bdeb34d21473326d33.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/1 2 3 falling down.ogg"
+dest_files=["res://.godot/imported/1 2 3 falling down.ogg-03d43f2caf0548bdeb34d21473326d33.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

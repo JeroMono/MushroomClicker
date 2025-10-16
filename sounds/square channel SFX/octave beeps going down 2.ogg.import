@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bsth1yp87561l"
+path="res://.godot/imported/octave beeps going down 2.ogg-829727c04ba0f9f6ed718839e2b9ecba.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/octave beeps going down 2.ogg"
+dest_files=["res://.godot/imported/octave beeps going down 2.ogg-829727c04ba0f9f6ed718839e2b9ecba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

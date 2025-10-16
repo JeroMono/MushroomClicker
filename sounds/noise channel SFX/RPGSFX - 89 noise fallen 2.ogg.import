@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b0humhhsylxxx"
+path="res://.godot/imported/RPGSFX - 89 noise fallen 2.ogg-05dd32f74baa15bf4a0fc1dce5b231fc.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 89 noise fallen 2.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 89 noise fallen 2.ogg-05dd32f74baa15bf4a0fc1dce5b231fc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

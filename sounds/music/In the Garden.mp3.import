@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpyh84bejlaia"
+path="res://.godot/imported/In the Garden.mp3-6bc2bc04b07580a48650cc5e541cb087.mp3str"
+
+[deps]
+
+source_file="res://sounds/music/In the Garden.mp3"
+dest_files=["res://.godot/imported/In the Garden.mp3-6bc2bc04b07580a48650cc5e541cb087.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

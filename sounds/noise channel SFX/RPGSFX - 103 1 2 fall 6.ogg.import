@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dba6x8w34gluj"
+path="res://.godot/imported/RPGSFX - 103 1 2 fall 6.ogg-e7d54868da3cbba9ce62f670f70ad346.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 103 1 2 fall 6.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 103 1 2 fall 6.ogg-e7d54868da3cbba9ce62f670f70ad346.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgq76u1c01w4e"
+path="res://.godot/imported/RPGSFX - 68 weird noise fade 1.ogg-fe93ab86be504c59a65c42e3cc47ea9c.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 68 weird noise fade 1.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 68 weird noise fade 1.ogg-fe93ab86be504c59a65c42e3cc47ea9c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

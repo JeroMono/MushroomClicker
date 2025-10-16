@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8le285hujaei"
+path="res://.godot/imported/multi slide down.ogg-103947d189ce21b6cc664be566275883.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/multi slide down.ogg"
+dest_files=["res://.godot/imported/multi slide down.ogg-103947d189ce21b6cc664be566275883.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

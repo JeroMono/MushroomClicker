@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bp0tlkwqlowlt"
+path="res://.godot/imported/glitchy down and up.ogg-005929aec7d4cd86d564b23316eef0b5.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/glitchy down and up.ogg"
+dest_files=["res://.godot/imported/glitchy down and up.ogg-005929aec7d4cd86d564b23316eef0b5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

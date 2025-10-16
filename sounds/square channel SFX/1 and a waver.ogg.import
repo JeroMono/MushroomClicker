@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2hpllf5ufnmv"
+path="res://.godot/imported/1 and a waver.ogg-419da8a7ed86702e9e9a85653aa5a8c7.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/1 and a waver.ogg"
+dest_files=["res://.godot/imported/1 and a waver.ogg-419da8a7ed86702e9e9a85653aa5a8c7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

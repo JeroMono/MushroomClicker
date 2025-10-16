@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxvcui58huuk1"
+path="res://.godot/imported/menu select beep 1.ogg-97028dfbb86361debd904c3a1f1be933.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/menu select beep 1.ogg"
+dest_files=["res://.godot/imported/menu select beep 1.ogg-97028dfbb86361debd904c3a1f1be933.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

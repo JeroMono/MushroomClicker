@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://wh78xhsgjeqm"
+path="res://.godot/imported/RPGSFX - 64 hit 1.ogg-ed89bf5d19d14be2bdd1a4175da5e5dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 64 hit 1.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 64 hit 1.ogg-ed89bf5d19d14be2bdd1a4175da5e5dc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

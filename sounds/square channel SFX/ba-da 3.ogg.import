@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpkosfdb3fotl"
+path="res://.godot/imported/ba-da 3.ogg-319b62f151cc47e7701faac08aef2edf.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/ba-da 3.ogg"
+dest_files=["res://.godot/imported/ba-da 3.ogg-319b62f151cc47e7701faac08aef2edf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cv0lte2gphqu"
+path="res://.godot/imported/glissando going up short.ogg-82d4fd95b8eedcda059530c475a8c45b.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/glissando going up short.ogg"
+dest_files=["res://.godot/imported/glissando going up short.ogg-82d4fd95b8eedcda059530c475a8c45b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

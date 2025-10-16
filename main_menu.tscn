@@ -1,29 +1,86 @@
-[gd_scene load_steps=2 format=3 uid="uid://ic4a2kj2jn0y"]
+[gd_scene load_steps=8 format=3 uid="uid://ic4a2kj2jn0y"]
 
 [ext_resource type="Script" uid="uid://bfvydfnvmr1t4" path="res://button.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://c06oj8spj88sk" path="res://textures/background/fondo_gameover.png" id="1_jix8l"]
+[ext_resource type="FontFile" uid="uid://bekv2bnp6c43f" path="res://fonts/Bitrimus.ttf" id="3_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://bvpmvjeviyheh" path="res://textures/background/champi.png" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://0x8sa1fhl2nn" path="res://textures/background/logo2.png" id="4_glbon"]
+[ext_resource type="AudioStream" uid="uid://cpyh84bejlaia" path="res://sounds/music/In the Garden.mp3" id="6_nlkkf"]
 
-[node name="MainMenu" type="Control"]
+[sub_resource type="LabelSettings" id="LabelSettings_jix8l"]
+font = ExtResource("3_fu7sn")
+font_size = 70
+
+[node name="MainMenu" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 200.0
+offset_bottom = 340.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 468.0
-offset_top = 196.0
-offset_right = 674.0
-offset_bottom = 255.0
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jix8l")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="Mushroom" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.405, 0.475)
+pivot_offset = Vector2(680, 600)
+texture = ExtResource("3_glbon")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -512.0
+offset_top = -293.0
+offset_right = 512.0
+offset_bottom = 731.0
+grow_horizontal = 2
+texture = ExtResource("4_glbon")
+
+[node name="Button" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+offset_left = 13.0
+offset_top = 251.0
+offset_right = 352.5
+offset_bottom = 332.385
 script = ExtResource("1_06t4h")
 
-[node name="Label" type="Label" parent="Button"]
+[node name="Label" type="Label" parent="CanvasLayer/Control/Button"]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 19.0
-offset_right = 155.0
-offset_bottom = 42.0
+offset_left = 9.0
+offset_top = 14.0
+offset_right = 374.0
+offset_bottom = 78.0
 text = "INICIAR JUEGO"
+label_settings = SubResource("LabelSettings_jix8l")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_nlkkf")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button" method="_on_pressed"]

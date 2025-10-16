@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxsur2moabw0f"
+path="res://.godot/imported/RPGSFX - 133 encounter space 1.ogg-47cf6fae964ec264a00e6b4b0714b5d2.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 133 encounter space 1.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 133 encounter space 1.ogg-47cf6fae964ec264a00e6b4b0714b5d2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bk7bjiryvli5q"
+path="res://.godot/imported/bad beeps 4.ogg-833509c9f1d1283c02533ecd65aaeebd.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/bad beeps 4.ogg"
+dest_files=["res://.godot/imported/bad beeps 4.ogg-833509c9f1d1283c02533ecd65aaeebd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

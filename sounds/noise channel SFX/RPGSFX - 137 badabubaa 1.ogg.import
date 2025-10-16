@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1mqbs06r5rih"
+path="res://.godot/imported/RPGSFX - 137 badabubaa 1.ogg-bb8cc668a38a2fe6d009bb364e8cdf82.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 137 badabubaa 1.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 137 badabubaa 1.ogg-bb8cc668a38a2fe6d009bb364e8cdf82.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

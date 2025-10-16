@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmq8s1ppya1uk"]
+
+[ext_resource type="Script" uid="uid://ixwb50r57a58" path="res://game_over.gd" id="1_3vqy3"]
+[ext_resource type="Texture2D" uid="uid://c06oj8spj88sk" path="res://textures/background/fondo_gameover.png" id="2_fsvsc"]
+[ext_resource type="FontFile" uid="uid://bekv2bnp6c43f" path="res://fonts/Bitrimus.ttf" id="3_4hbme"]
+[ext_resource type="LabelSettings" uid="uid://caoo3kuri2yne" path="res://GameOver.tres" id="4_qtm60"]
+[ext_resource type="AudioStream" uid="uid://b6yf8lj16us2v" path="res://sounds/music/Copycat.mp3" id="5_fsvsc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jywu3"]
+font = ExtResource("3_4hbme")
+font_size = 80
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3vqy3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.155
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fsvsc")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="PuntuacionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 141.0
+offset_right = 624.0
+offset_bottom = 254.0
+text = "PUNTUACION:"
+label_settings = SubResource("LabelSettings_jywu3")
+
+[node name="ButtonMenu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 362.0
+offset_right = 578.17004
+offset_bottom = 451.0
+
+[node name="MenuLabel" type="Label" parent="ButtonMenu"]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 25.0
+offset_right = 287.0
+offset_bottom = 99.0
+text = "MENU"
+label_settings = ExtResource("4_qtm60")
+
+[node name="ButtonPlay" type="Button" parent="."]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 358.0
+offset_right = 988.97
+offset_bottom = 442.0
+
+[node name="PlayLabel" type="Label" parent="ButtonPlay"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 28.0
+offset_right = 181.0
+offset_bottom = 51.0
+text = "VOLVER A JUGAR"
+label_settings = ExtResource("4_qtm60")
+
+[node name="WinLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 343.0
+offset_top = 62.0
+offset_right = 658.0
+offset_bottom = 175.0
+text = "GANASTE!"
+label_settings = SubResource("LabelSettings_jywu3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_fsvsc")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="ButtonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="ButtonPlay" to="." method="_on_button_play_pressed"]

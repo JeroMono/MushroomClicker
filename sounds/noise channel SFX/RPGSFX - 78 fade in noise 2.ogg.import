@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbaca87g2mgsc"
+path="res://.godot/imported/RPGSFX - 78 fade in noise 2.ogg-10a1f121dd36e7494e8ebd8ca1f438f5.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/noise channel SFX/RPGSFX - 78 fade in noise 2.ogg"
+dest_files=["res://.godot/imported/RPGSFX - 78 fade in noise 2.ogg-10a1f121dd36e7494e8ebd8ca1f438f5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

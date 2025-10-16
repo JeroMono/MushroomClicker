@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ffyereineyjx"]
+
+[ext_resource type="Script" uid="uid://du2i8tj52wjw2" path="res://character_peque.gd" id="1_r0b8p"]
+[ext_resource type="SpriteFrames" uid="uid://cblrpg13e5vl6" path="res://player_green.tres" id="2_rkmt5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(43.5, 42)
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_rkmt5"]
+
+[node name="player" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_r0b8p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+texture_filter = 1
+position = Vector2(1, -35)
+sprite_frames = ExtResource("2_rkmt5")
+animation = &"hit"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -22)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPolyphonic_rkmt5")
+max_polyphony = 16
+playback_type = 1
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

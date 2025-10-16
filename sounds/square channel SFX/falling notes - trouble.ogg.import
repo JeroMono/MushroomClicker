@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://be4ayngaecigy"
+path="res://.godot/imported/falling notes - trouble.ogg-4bc8814fac244f2575afae4133a23dcf.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/square channel SFX/falling notes - trouble.ogg"
+dest_files=["res://.godot/imported/falling notes - trouble.ogg-4bc8814fac244f2575afae4133a23dcf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

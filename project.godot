@@ -19,6 +19,13 @@ config/icon="res://icon.svg"
 
 Puntuacion="*res://singleton.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+
 [input]
 
 wclick={
@@ -39,4 +46,5 @@ LeftClick={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
