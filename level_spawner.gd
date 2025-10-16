@@ -27,6 +27,7 @@ func spawn_enemy(pos: Vector2) -> void:
 	add_child(enemigo)
 	
 func _ready() -> void:
+	$"../LevelLabel".text = "Nivel: " + str(Puntuacion.level)
 	match Puntuacion.level:
 		1:
 			spawn_player(Vector2(200, 300),2)

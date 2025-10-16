@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ic4a2kj2jn0y"]
+[gd_scene load_steps=9 format=3 uid="uid://ic4a2kj2jn0y"]
 
 [ext_resource type="Script" uid="uid://bfvydfnvmr1t4" path="res://button.gd" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://c06oj8spj88sk" path="res://textures/background/fondo_gameover.png" id="1_jix8l"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bvpmvjeviyheh" path="res://textures/background/champi.png" id="3_glbon"]
 [ext_resource type="Texture2D" uid="uid://0x8sa1fhl2nn" path="res://textures/background/logo2.png" id="4_glbon"]
 [ext_resource type="AudioStream" uid="uid://cpyh84bejlaia" path="res://sounds/music/In the Garden.mp3" id="6_nlkkf"]
+[ext_resource type="Script" uid="uid://bx0hkcykqys28" path="res://salir_button.gd" id="6_qe12f"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jix8l"]
 font = ExtResource("3_fu7sn")
@@ -62,6 +63,7 @@ grow_horizontal = 2
 texture = ExtResource("4_glbon")
 
 [node name="Button" type="Button" parent="CanvasLayer/Control"]
+process_mode = 3
 layout_mode = 1
 offset_left = 13.0
 offset_top = 251.0
@@ -78,9 +80,28 @@ offset_bottom = 78.0
 text = "INICIAR JUEGO"
 label_settings = SubResource("LabelSettings_jix8l")
 
+[node name="SalirButton" type="Button" parent="CanvasLayer/Control"]
+process_mode = 3
+layout_mode = 1
+offset_left = 13.0
+offset_top = 381.0
+offset_right = 352.5
+offset_bottom = 462.385
+script = ExtResource("6_qe12f")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/SalirButton"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 14.0
+offset_right = 374.0
+offset_bottom = 78.0
+text = "SALIR"
+label_settings = SubResource("LabelSettings_jix8l")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_nlkkf")
 autoplay = true
 parameters/looping = true
 
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control/Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/SalirButton" to="CanvasLayer/Control/SalirButton" method="_on_pressed"]

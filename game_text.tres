@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bgq2c6fpwj8ir"]
+
+[ext_resource type="FontFile" uid="uid://bekv2bnp6c43f" path="res://fonts/Bitrimus.ttf" id="1_cbgrn"]
+
+[resource]
+font = ExtResource("1_cbgrn")
+font_size = 60
+font_color = Color(1, 1, 0.5647059, 1)

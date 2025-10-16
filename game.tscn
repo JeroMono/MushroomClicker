@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://eta5g6w7hrvd"]
+[gd_scene load_steps=11 format=3 uid="uid://eta5g6w7hrvd"]
 
 [ext_resource type="Texture2D" uid="uid://be56a8s1qcf3v" path="res://textures/Mushroom/fondo_bosque.png" id="1_7jktm"]
 [ext_resource type="FontFile" uid="uid://bekv2bnp6c43f" path="res://fonts/Bitrimus.ttf" id="2_ryrav"]
 [ext_resource type="Script" uid="uid://brh8q08ug7rgn" path="res://score.gd" id="3_7jktm"]
 [ext_resource type="Script" uid="uid://cn44au7352oc7" path="res://timer.gd" id="3_eow3j"]
+[ext_resource type="LabelSettings" uid="uid://bgq2c6fpwj8ir" path="res://game_text.tres" id="4_eow3j"]
 [ext_resource type="AudioStream" uid="uid://bntdk54gekvc7" path="res://sounds/music/Swiming.mp3" id="6_ryrav"]
+[ext_resource type="Script" uid="uid://dsshjyvc8fray" path="res://menu_bar.gd" id="7_j5wjh"]
 [ext_resource type="Script" uid="uid://bp68feq44jyaj" path="res://level_spawner.gd" id="9_vef74"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_eow3j"]
@@ -12,10 +14,9 @@ font = ExtResource("2_ryrav")
 font_size = 50
 font_color = Color(1, 0.5529412, 0.48235294, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_j5wjh"]
-font = ExtResource("2_ryrav")
-font_size = 60
-font_color = Color(1, 1, 0.5647059, 1)
+[sub_resource type="Theme" id="Theme_j5wjh"]
+default_font = ExtResource("2_ryrav")
+default_font_size = 80
 
 [node name="Node2D" type="Node2D"]
 
@@ -67,13 +68,67 @@ offset_right = 96.0
 offset_bottom = 44.0
 grow_horizontal = 2
 text = "Timer:"
-label_settings = SubResource("LabelSettings_j5wjh")
+label_settings = ExtResource("4_eow3j")
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_eow3j")
 
 [node name="Spawner" type="Node" parent="CanvasLayer"]
 script = ExtResource("9_vef74")
+
+[node name="LevelLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -206.0
+offset_top = 22.0
+offset_right = -82.0
+offset_bottom = 79.0
+grow_horizontal = 0
+text = "Nivel: 1"
+label_settings = ExtResource("4_eow3j")
+horizontal_alignment = 1
+
+[node name="MenuBar" type="MenuBar" parent="CanvasLayer"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = -98.0
+offset_right = 300.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_j5wjh")
+script = ExtResource("7_j5wjh")
+
+[node name="Renaudar_Button" type="MenuButton" parent="CanvasLayer/MenuBar"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -124.0
+offset_right = 124.0
+offset_bottom = 72.0
+grow_horizontal = 2
+text = "Renaudar"
+
+[node name="Salir_Button" type="MenuButton" parent="CanvasLayer/MenuBar"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -72.0
+offset_right = 69.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Salir"
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
@@ -83,4 +138,7 @@ stream = ExtResource("6_ryrav")
 autoplay = true
 parameters/looping = true
 
+[connection signal="gui_input" from="CanvasLayer/MenuBar" to="CanvasLayer/MenuBar" method="_on_gui_input"]
+[connection signal="pressed" from="CanvasLayer/MenuBar/Renaudar_Button" to="CanvasLayer/MenuBar" method="_on_renaudar_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/MenuBar/Salir_Button" to="CanvasLayer/MenuBar" method="_on_salir_button_pressed"]
 [connection signal="timeout" from="Timer" to="CanvasLayer/Timer" method="_on_timer_timeout"]
